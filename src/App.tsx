@@ -27,19 +27,17 @@ export const ThemedApp = () => {
         p: 2,
       }}
     >
+      <Stack direction="row" justifyContent="end" alignItems="center" mb={2}>
+        <ButtonGroup variant="text" aria-label="text button group" color="secondary">
+          <Button disabled={theme.palette.mode === 'dark'} onClick={colorMode.toggleColorMode}>
+            Dark
+          </Button>
+          <Button disabled={theme.palette.mode === 'light'} onClick={colorMode.toggleColorMode}>
+            Light
+          </Button>
+        </ButtonGroup>
+      </Stack>
       <Grid container spacing={2}>
-        <Grid item xs={12}>
-          <Stack direction="row" justifyContent="end" alignItems="center">
-            <ButtonGroup variant="text" aria-label="text button group" color="secondary">
-              <Button disabled={theme.palette.mode === 'dark'} onClick={colorMode.toggleColorMode}>
-                Dark
-              </Button>
-              <Button disabled={theme.palette.mode === 'light'} onClick={colorMode.toggleColorMode}>
-                Light
-              </Button>
-            </ButtonGroup>
-          </Stack>
-        </Grid>
         <Grid item xs={4}>
           <Paper elevation={1}>
             <Box
