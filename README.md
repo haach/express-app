@@ -1,4 +1,4 @@
-# Vite Express app
+# Vite Express app 🚅
 ## Small app + server to generate random names. 
 ![preview](https://user-images.githubusercontent.com/34210193/164259144-ea87af3a-69da-4055-80ea-a6fba3ef6d21.gif)
 ## It's useless but it has dark mode!
